@@ -13,7 +13,7 @@ var minHeight = screen.height;
 var footer =document.querySelector('.footer');
 var img = document.querySelector('#bg');
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     if(minHeight > contentHeight){
         contentHeight = minHeight;
         footer.classList.add('bottom0');
