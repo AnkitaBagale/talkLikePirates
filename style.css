@@ -1,0 +1,114 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Yeon Sung', cursive;
+}
+body{
+    margin: 0;
+}
+
+/* to apply bg a image with opacity 50% */
+.bg-image{
+    overflow-x: hidden;
+}
+.bg-image img{
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.place-over-bg{
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
+/* translation section */
+
+.box{
+    width: 100%;
+    border: none;
+    border-radius: 1.5rem;
+    height: 110px;
+    word-wrap: break-word;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#output{
+    overflow-y:scroll;
+    font-size: 1rem;
+}
+
+#output::-webkit-scrollbar {
+    background: transparent; 
+  }
+
+
+.container{
+    width:100%;
+    max-width: 600px;
+    min-height: 100px;
+    margin: auto;
+    word-wrap: break-word;
+    padding: 0 20px;
+}
+
+#translateBtn{
+    border: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 0.6rem 2rem 0.4rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.text-left{
+    text-align: left;
+}
+        
+
+/* footer */
+.footer{
+    padding-bottom: 20px;
+}
+
+.bottom0{
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.footer-header{
+    padding: 1rem 0.5rem;
+}
+ul{
+    padding-inline-start: 0px;
+    margin: 0;
+}
+
+.list li{
+    padding: 0rem 2rem;
+       
+}
+
+i.fab::before {
+    font-size: 2rem;
+    color:black;
+}
+
+.non-bullet-list{
+    list-style: none;
+}
