@@ -5,15 +5,17 @@ var userInput=document.querySelector('#userInput');
 var output = document.querySelector('#output');
 var serverUrl="https://api.funtranslations.com/translate/pirate.json";
 
+var footer =document.querySelector('.footer');
+var img = document.querySelector('#bg');
+var contentOfPage = document.querySelector('.place-over-bg')
+
 
 //adjust height of background image
 //fixing footer to bottom if screen height is bigger than content height;
-var contentHeight= document.querySelector('.place-over-bg').clientHeight;
-var minHeight = screen.height;
-var footer =document.querySelector('.footer');
-var img = document.querySelector('#bg');
+window.addEventListener('load', () => {
+    var contentHeight= contentOfPage.clientHeight;
+    var minHeight = screen.height;
 
-window.addEventListener('DOMContentLoaded', () => {
     if(minHeight > contentHeight){
         contentHeight = minHeight;
         footer.classList.add('bottom0');
