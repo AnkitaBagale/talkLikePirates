@@ -1,20 +1,20 @@
 
 
-var translateBtn= document.querySelector('#translateBtn');
-var userInput=document.querySelector('#userInput');
-var output = document.querySelector('#output');
-var serverUrl="https://api.funtranslations.com/translate/pirate.json";
+const translateBtn= document.querySelector('#translateBtn');
+const userInput=document.querySelector('#userInput');
+const output = document.querySelector('#output');
+const serverUrl="https://api.funtranslations.com/translate/pirate.json";
 
-var footer =document.querySelector('.footer');
-var img = document.querySelector('#bg');
-var contentOfPage = document.querySelector('.place-over-bg')
+const footer =document.querySelector('.footer');
+const img = document.querySelector('#bg');
+const contentOfPage = document.querySelector('.place-over-bg')
 
 
 //adjust height of background image
 //fixing footer to bottom if screen height is bigger than content height;
 window.addEventListener('load', () => {
-    var contentHeight= contentOfPage.clientHeight;
-    var minHeight = screen.height;
+    const contentHeight= contentOfPage.clientHeight;
+    const minHeight = screen.height;
 
     if(minHeight > contentHeight){
         contentHeight = minHeight;
