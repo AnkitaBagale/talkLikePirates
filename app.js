@@ -13,7 +13,7 @@ const contentOfPage = document.querySelector('.place-over-bg')
 //adjust height of background image
 //fixing footer to bottom if screen height is bigger than content height;
 window.addEventListener('load', () => {
-    const contentHeight= contentOfPage.clientHeight;
+    let contentHeight= contentOfPage.clientHeight;
     const minHeight = screen.height;
 
     if(minHeight > contentHeight){
